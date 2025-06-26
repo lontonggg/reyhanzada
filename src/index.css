@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import "tailwindcss/utilities";
+
+@layer utilities {
+  .text-primary {
+    color: #1b2b34;
+  }
+  .text-secondary {
+    color: #153B46;
+  }
+  .text-dark {
+    color: #0A1920;
+  }
+  .bg-primary {
+    background-color: whitesmoke;
+  }
+  .bg-secondary {
+    background-color: #153B46;
+  }
+  .bg-dark {
+    background-color: #0A1920;
+  }
+}
+
+body {
+  font-family: 'SF Pro Display', 'San Francisco', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 150px;
+}
