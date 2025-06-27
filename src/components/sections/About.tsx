@@ -139,7 +139,7 @@ export const About = () => {
             className="lg:w-[60px] lg:h-[60px]"
           />
           <h1 className="font-bold text-sm xl:text-2xl">
-            Relevant Courses – Data Science & Analytics
+            Relevant Courses – Data & Analytics
           </h1>
           <p className="text-xs lg:text-lg font-medium text-center">
             Statistics & Probability • Introduction to AI & Data Science • Data
