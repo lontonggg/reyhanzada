@@ -105,8 +105,8 @@ export const Hero: React.FC = () => {
     >
       <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-4">
         <web.div className="text-primary lg:text-left lg:w-1/2">
-          <h1 className="text-4xl lg:text-7xl font-bold">Hi, I'm Reyhan</h1>
-          <h2 className="text-xl lg:text-3xl mt-2 lg:mt-4">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold">Hi, I'm Reyhan</h1>
+          <h2 className="text-xl md:text-2xl lg:text-3xl mt-2 lg:mt-4">
             I build web applications and enjoy uncovering insights through data analytics.
           </h2>
         </web.div>

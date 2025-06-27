@@ -18,25 +18,25 @@ export const Experience = () => {
         <h1 className="text-2xl lg:text-4xl font-bold">My Experience</h1>
         <div className="lg:mt-10 grid grid-cols-1 gap-1">
             {experiences.map((experience, index) => (
-              <div 
+                <div 
                 key={index}
                 className={`transition-all duration-300 ${
                   hoveredIndex !== null && hoveredIndex !== index 
-                    ? 'blur-[2px] opacity-50' 
-                    : ''
+                  ? 'lg:blur-[2px] lg:opacity-50' 
+                  : ''
                 }`}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
-              >
+                >
                 <ExperienceCard 
-                    startDate={experience.startDate}
-                    endDate={experience.endDate}
-                    title={experience.title}
-                    description={experience.description}
-                    tools={experience.tools}
-                    hyperlink={experience.hyperlink}
+                  startDate={experience.startDate}
+                  endDate={experience.endDate}
+                  title={experience.title}
+                  description={experience.description}
+                  tools={experience.tools}
+                  hyperlink={experience.hyperlink}
                 />
-              </div>
+                </div>
             ))}
         </div>
     </motion.div>

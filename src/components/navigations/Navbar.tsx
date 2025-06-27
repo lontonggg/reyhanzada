@@ -24,7 +24,7 @@ export const Navbar = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.2, ease: "easeOut" }}
     >
-      <div className="px-6 xl:px-72 lg:px-56 py-6 flex justify-between items-center text-xl text-primary">
+      <div className="px-6 xl:px-72 lg:px-56 py-5 flex justify-between items-center text-xl text-primary">
         <div>
           <a href="/">
             <h1 className="font-medium cursor-pointer">reyhanzada.com</h1>

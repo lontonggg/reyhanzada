@@ -1,6 +1,7 @@
 import { LuArrowUpRight } from "react-icons/lu";
 import { motion } from "framer-motion";
 import type { Experience } from "../../data/experiences";
+import { parseDescription } from  "../../utils/helper";
 
 export const ExperienceCard: React.FC<Experience> = ({
   startDate,
@@ -13,6 +14,8 @@ export const ExperienceCard: React.FC<Experience> = ({
   const dateRange = endDate
     ? `${startDate} — ${endDate}`
     : `${startDate} — Present`;
+
+  const parsedDescription = parseDescription(description);
 
   return (
     <motion.a 
@@ -36,12 +39,12 @@ export const ExperienceCard: React.FC<Experience> = ({
               className="transition-transform duration-300 translate-y-1 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
             />
           </div>
-          <p className="text-sm text-justify mb-4">{description}</p>
+          <p className="text-sm text-justify mb-4">{parsedDescription}</p>
           <div className="flex flex-wrap gap-2">
             {tools.map((tool) => (
               <span
                 key={tool}
-                className="bg-gray-200 text-primary px-2 py-1 rounded-full text-xs shadow"
+                className="bg-gray-200 text-primary px-2 py-1 rounded-full text-xs font-medium shadow"
               >
                 {tool}
               </span>
@@ -52,22 +55,22 @@ export const ExperienceCard: React.FC<Experience> = ({
         {/* Desktop */}
         <div className="hidden lg:grid lg:grid-cols-5">
           <div>
-            <h1 className="text-xl font-medium">{dateRange}</h1>
+            <h1 className="text-2xl font-medium">{dateRange}</h1>
           </div>
           <div className="col-span-4">
             <div className="flex items-center gap-1">
-              <h1 className="text-xl font-bold">{title}</h1>
+              <h1 className="text-2xl font-bold">{title}</h1>
               <LuArrowUpRight
                 size={20}
                 className="transition-transform duration-300 translate-y-1 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
               />
             </div>
-            <p className="text-justify mt-2">{description}</p>
+            <p className="text-xl text-justify mt-4">{parsedDescription}</p>
             <div className="flex flex-wrap gap-2 mt-4">
               {tools.map((tool) => (
                 <span
                   key={tool}
-                  className="bg-gray-200 text-primary px-3 py-1 rounded-full text-sm shadow"
+                  className="bg-gray-200 text-primary px-3 py-1 rounded-full font-medium shadow"
                 >
                   {tool}
                 </span>

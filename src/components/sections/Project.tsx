@@ -22,7 +22,7 @@ export const Projects = () => {
             key={index}
             className={`transition-all duration-300 ${
               hoveredIndex !== null && hoveredIndex !== index
-                ? "blur-[2px] opacity-50"
+                ? "lg:blur-[2px] lg:opacity-50"
                 : ""
             }`}
             onMouseEnter={() => setHoveredIndex(index)}
