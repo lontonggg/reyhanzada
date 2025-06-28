@@ -14,33 +14,37 @@ export const Navbar = () => {
 
   return (
     <motion.div 
-      className="fixed top-0 left-0 right-0 z-50 bg-dark/80 backdrop-blur-md border-b border-white/10 shadow-lg"
+      className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50"
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.2, ease: "easeOut" }}
     >
-      <div className="px-6 xl:px-72 lg:px-56 py-4 flex justify-center items-center lg:text-xl text-primary">
-        <div className="flex space-x-6 md:space-x-10">
+      <motion.div 
+        className="bg-black/5 backdrop-blur-md border border-white/10 shadow-lg rounded-full px-6 py-3 mt-4"
+        whileHover={{ scale: 1.05 }}
+        transition={{ duration: 0.2, ease: "easeOut" }}
+      >
+        <div className="flex space-x-6 md:space-x-8 text-lg md:text-xl text-primary">
           <h1 
-            className="transition-all duration-200 hover:text-gray-300 hover:scale-105 cursor-pointer"
+            className="transition-all duration-200 hover:text-gray-300 hover:scale-105 cursor-pointer px-4 py-2 rounded-full hover:bg-white/10"
             onClick={() => scrollToSection('about')}
           >
             About
           </h1>
           <h1 
-            className="transition-all duration-200 hover:text-gray-300 hover:scale-105 cursor-pointer"
+            className="transition-all duration-200 hover:text-gray-300 hover:scale-105 cursor-pointer px-4 py-2 rounded-full hover:bg-white/10"
             onClick={() => scrollToSection('experience')}
           >
             Experience
           </h1>
           <h1 
-            className="transition-all duration-200 hover:text-gray-300 hover:scale-105 cursor-pointer"
+            className="transition-all duration-200 hover:text-gray-300 hover:scale-105 cursor-pointer px-4 py-2 rounded-full hover:bg-white/10"
             onClick={() => scrollToSection('projects')}
           >
             Projects
           </h1>
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   )
 }
