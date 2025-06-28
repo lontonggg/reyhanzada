@@ -110,7 +110,7 @@ export const About = () => {
                 rel="noopener noreferrer"
                 className="flex items-center text-primary hover:text-accent transition-colors"
               >
-                <span className="mr-2 text-lg lg:text-xl">{icon}</span>
+                <span className="mr-2 text-xl">{icon}</span>
                 <span className="transition-all duration-200 hover:text-gray-300 cursor-pointer hidden lg:block lg:text-xl">
                   {label}
                 </span>
