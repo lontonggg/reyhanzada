@@ -37,3 +37,9 @@ html {
 [id] {
   scroll-margin-top: 180px;
 }
+
+@media (max-width: 767px) {
+  [id] {
+    scroll-margin-top: 150px;
+  }
+}
