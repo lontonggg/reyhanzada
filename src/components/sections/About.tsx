@@ -1,5 +1,7 @@
 import { FaLaptopCode } from "react-icons/fa";
 import { HiOutlinePresentationChartLine } from "react-icons/hi";
+import { MdEmail } from "react-icons/md";
+import { FaLinkedin, FaGithub, FaMedium, FaInstagram } from "react-icons/fa";
 import {
   SiTypescript,
   SiReact,
@@ -25,6 +27,34 @@ import {
 import { motion } from "framer-motion";
 
 export const About = () => {
+  const socialLinks = [
+    {
+      icon: <MdEmail />,
+      label: "zadareyhan@gmail.com",
+      href: "mailto:zadareyhan@gmail.com",
+    },
+    {
+      icon: <FaGithub />,
+      label: "lontonggg",
+      href: "https://github.com/lontonggg",
+    },
+    {
+      icon: <FaLinkedin />,
+      label: "in/reyhanzada",
+      href: "https://linkedin.com/in/reyhanzada",
+    },
+    {
+      icon: <FaMedium />,
+      label: "@zadareyhan",
+      href: "https://medium.com/@zadareyhan",
+    },
+    {
+      icon: <FaInstagram />,
+      label: "@rehanzadaa",
+      href: "https://instagram.com/rehanzadaa",
+    },
+  ];
+
   return (
     <motion.div
       id="about"
@@ -52,16 +82,41 @@ export const About = () => {
         >
           <h1 className="text-2xl lg:text-4xl font-bold">About Me</h1>
           <p className="text-sm lg:text-2xl text-justify mt-4">
-            I’m <span className="font-medium">Reyhan Zada Virgiwibowo</span>, a
+            I'm <span className="font-medium">Reyhan Zada Virgiwibowo</span>, a
             final-year{" "}
             <span className="font-medium">Computer Science student</span> at the{" "}
             <span className="font-medium">University of Indonesia</span>,
             expected to graduate in{" "}
             <span className="font-medium">July 2026</span>. Based in{" "}
-            <span className="font-medium">South Jakarta, Indonesia</span>, I’m
+            <span className="font-medium">South Jakarta, Indonesia</span>, I'm
             eager to contribute to meaningful projects and grow through
             collaboration.
           </p>
+        </motion.div>
+
+        <motion.div
+          className="w-full mt-8 lg:mt-12"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+
+          <div className="flex space-x-2 lg:space-x-8 mb-4">
+            {socialLinks.map(({ icon, label, href }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center text-primary hover:text-accent transition-colors"
+              >
+                <span className="mr-2 text-lg lg:text-xl">{icon}</span>
+                <span className="transition-all duration-200 hover:text-gray-300 cursor-pointer hidden lg:block lg:text-xl">
+                  {label}
+                </span>
+              </a>
+            ))}
+          </div>
         </motion.div>
       </div>
 

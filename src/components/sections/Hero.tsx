@@ -5,6 +5,7 @@ import * as THREE from "three";
 import { useSpring, a as web } from "@react-spring/web";
 import { a as three } from "@react-spring/three";
 import { motion } from "framer-motion";
+import { TypingAnimation } from "../../utils/TypingAnimation";
 
 const Model: React.FC<{ open: boolean; hinge: ReturnType<typeof useSpring>[0]['open'] }> = ({ open, hinge }) => {
   const group = useRef<THREE.Group>(null!);
@@ -105,9 +106,27 @@ export const Hero: React.FC = () => {
     >
       <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-4">
         <web.div className="text-primary lg:text-left lg:w-1/2">
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold">Hi, I'm Reyhan</h1>
-          <h2 className="text-xl md:text-2xl lg:text-3xl mt-2 lg:mt-4">
-            I build web applications and enjoy uncovering insights through data analytics.
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold relative">
+            <span className="invisible">Hi, I'm Reyhan</span>
+            <span className="absolute top-0 left-0">
+              <TypingAnimation 
+                text="Hi, I'm Reyhan" 
+                delay={500} 
+                speed={60}
+                className="" 
+              />
+            </span>
+          </h1>
+          <h2 className="text-xl md:text-2xl lg:text-3xl mt-2 lg:mt-4 relative">
+            <span className="invisible">I build web applications and enjoy uncovering insights through data analytics.</span>
+            <span className="absolute top-0 left-0">
+              <TypingAnimation 
+                text="I build web applications and enjoy uncovering insights through data analytics." 
+                delay={2000} 
+                speed={30}
+                className="" 
+              />
+            </span>
           </h2>
         </web.div>
         
