@@ -55,7 +55,7 @@ export const ExperienceCard: React.FC<Experience> = ({
         {/* Desktop */}
         <div className="hidden lg:grid lg:grid-cols-5">
           <div>
-            <h1 className="text-2xl font-medium">{dateRange}</h1>
+            <h1 className="text-2xl font-medium px-2">{dateRange}</h1>
           </div>
           <div className="col-span-4">
             <div className="flex items-center gap-1">

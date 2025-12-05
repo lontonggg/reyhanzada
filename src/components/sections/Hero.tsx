@@ -118,10 +118,10 @@ export const Hero: React.FC = () => {
             </span>
           </h1>
           <h2 className="text-xl md:text-2xl lg:text-3xl mt-2 lg:mt-4 relative">
-            <span className="invisible">I build web applications and enjoy uncovering insights through data analytics.</span>
+            <span className="invisible">I develop software applications and build AI solutions.</span>
             <span className="absolute top-0 left-0">
               <TypingAnimation 
-                text="I build web applications and enjoy uncovering insights through data analytics." 
+                text="I develop software applications and build AI solutions." 
                 delay={2000} 
                 speed={30}
                 className="" 

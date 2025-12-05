@@ -9,11 +9,19 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    startDate: "Jun 2025",
+    startDate: "Dec 2025",
     endDate: "Present",
+    title: "Software Engineer - AI • Tridorian",
+    description: "After a great 6 months internship experience, I was promoted to a **full-time Software Engineer – AI**, and in this new role, I am expanding my impact by building **full-stack, end-to-end AI applications**, integrating production-ready frontends, scalable backends, and intelligent agents into cohesive real-world solutions.",
+    tools: ["Google Cloud", "Google Agent Development Kit", "Copilot Kit", "AG-UI"],
+    hyperlink: "https://tridorian.com/"
+  },
+  {
+    startDate: "Jun 2025",
+    endDate: "Nov 2025",
     title: "Machine Learning Engineer Intern • Tridorian",
-    description: "**Tridorian** is a tech company and Google Cloud Partner focused on AI-driven business solutions. As a **Machine Learning Engineer Intern**, I documented ML projects, organized progress with **Jira**, and completed **Google Cloud** courses to support upcoming work.",
-    tools: ["Google Cloud", "Jira", "Gemini"],
+    description: "**Tridorian** is a top-tier **Google Cloud Premier Partner** across the APAC region, specialising in **Secure Cloud, Data & AI**. As a **Machine Learning Engineer Intern**, I focused on building **Agentic AI solutions** on **Google Cloud**, developing AI automation agents with **Google ADK**, implementing a multimodal chatbot, creating an internal feedback pipeline, and improving the reliability and deployment of AI-driven systems.",
+    tools: ["Google Cloud", "Google Agent Development Kit", "Vertex AI", "Model Context Protocol", "Docker", "Langfuse"],
     hyperlink: "https://tridorian.com/"
   },
   {

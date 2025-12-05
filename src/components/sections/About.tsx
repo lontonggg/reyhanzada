@@ -82,15 +82,17 @@ export const About = () => {
         >
           <h1 className="text-2xl lg:text-4xl font-bold">About Me</h1>
           <p className="text-sm lg:text-2xl text-justify mt-4">
-            I'm <span className="font-medium">Reyhan Zada Virgiwibowo</span>, a
-            final-year{" "}
-            <span className="font-medium">Computer Science student</span> at the{" "}
-            <span className="font-medium">University of Indonesia</span>,
-            expected to graduate in{" "}
-            <span className="font-medium">July 2026</span>. Based in{" "}
-            <span className="font-medium">South Jakarta, Indonesia</span>, I'm
-            eager to contribute to meaningful projects and grow through
-            collaboration.
+            I'm <span className="font-medium">Reyhan</span>, a
+            final-year
+            <span className="font-medium"> Computer Science student </span> at the
+            <span className="font-medium"> University of Indonesia </span> with a
+            strong passion for
+            <span className="font-medium"> Artificial Intelligence </span> and
+            <span className="font-medium"> Software Engineering</span>. I’ve
+            worked on real-world AI and cloud projects, sharpening my analytical
+            and collaborative skills along the way. Curious, adaptive, and
+            driven, I’m eager to keep building impactful technology and grow
+            further in the field.
           </p>
         </motion.div>
 
@@ -100,7 +102,6 @@ export const About = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-
           <div className="flex space-x-2 lg:space-x-8 mb-4">
             {socialLinks.map(({ icon, label, href }) => (
               <a
@@ -127,10 +128,10 @@ export const About = () => {
             color="0A0F13"
             className="lg:w-[60px] lg:h-[60px]"
           />
-          <h1 className="font-bold text-sm xl:text-2xl">
+          <h1 className="font-bold text-sm xl:text-xl">
             Relevant Courses – Software Engineering
           </h1>
-          <p className="text-xs lg:text-lg font-medium text-center">
+          <p className="text-xs lg:text-base font-medium text-center">
             Programming I & II • Data Structures & Algorithms • Platform Based
             Programming • UI/UX • Design & Analysis of Algorithm • Software
             Engineering • Software Project
@@ -193,10 +194,10 @@ export const About = () => {
             color="0A0F13"
             className="lg:w-[60px] lg:h-[60px]"
           />
-          <h1 className="font-bold text-sm xl:text-2xl">
+          <h1 className="font-bold text-sm xl:text-xl">
             Relevant Courses – Data & Analytics
           </h1>
-          <p className="text-xs lg:text-lg font-medium text-center">
+          <p className="text-xs lg:text-base font-medium text-center">
             Statistics & Probability • Introduction to AI & Data Science • Data
             Mining • Machine Learning • Reinforcement Learning • Deep Learning •
             Numerical Analysis

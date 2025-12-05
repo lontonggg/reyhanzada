@@ -1,4 +1,8 @@
+# Crawl directives for Reyhan Zada Portfolio (updated 2025-02-05)
 User-agent: *
+Allow: /
+
+User-agent: AdsBot-Google
 Allow: /
 
 Sitemap: https://reyhanzada.com/sitemap.xml
