@@ -82,13 +82,11 @@ export const About = () => {
         >
           <h1 className="text-2xl lg:text-4xl font-bold">About Me</h1>
           <p className="text-sm lg:text-2xl text-justify mt-4">
-            I'm <span className="font-medium">Reyhan</span>, a
+            I'm <span className="font-medium">Reyhan</span>, 
+            a <span className="font-medium">Software Engineer</span> and
             final-year
-            <span className="font-medium"> Computer Science student </span> at the
-            <span className="font-medium"> University of Indonesia </span> with a
-            strong passion for
-            <span className="font-medium"> Artificial Intelligence </span> and
-            <span className="font-medium"> Software Engineering</span>. I’ve
+            <span className="font-medium"> Computer Science  </span>  student at the
+            <span className="font-medium"> University of Indonesia </span>. I’ve
             worked on real-world AI and cloud projects, sharpening my analytical
             and collaborative skills along the way. Curious, adaptive, and
             driven, I’m eager to keep building impactful technology and grow
